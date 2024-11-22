@@ -4,8 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        greenUrbaser1: '#053630',
-      }
+        "urbaser-1": "#053630",
+        "urbaser-2": "#53d1c9",
+      },
     },
   },
   plugins: [],
