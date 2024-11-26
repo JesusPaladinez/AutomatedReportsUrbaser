@@ -10,7 +10,7 @@ export default function Navbar() {
         <img src={logoUrbaser} alt="Logo Urbaser" className="h-10" /> 
       </Link>
       <div className="flex gap-10 text-white font-medium">
-        <Link to="/" className='hover:text-urbaser-2 transition-all'>Inicio</Link>
+        <Link to="/informes" className='hover:text-urbaser-2 transition-all'>Inicio</Link>
         <Link to="/login" className='hover:text-urbaser-2 transition-all'>Iniciar sesión</Link>
         <Link to="/register" className='hover:text-urbaser-2 transition-all'>Crear cuenta</Link>
       </div>
