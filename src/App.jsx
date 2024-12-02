@@ -1,26 +1,21 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import Navbar from './components/NavBar';
+import Layout from './components/Layout';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
-import Footer from './components/Footer';
 
 
 export default function App() {
   return (
-    <div className='flex flex-col min-h-screen'>
-      <BrowserRouter>
-        <Navbar />
-        <main className='flex-1'>
-          <Routes>
-            <Route path='/' element={<Navigate to="/informes" replace />} />
-            <Route path='/informes' element={<Home />} />
-            <Route path='/login' element={<Login />} />
-            <Route path='/register' element={<Register />} />
-          </Routes>
-        </main>
-        <Footer />
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path='/' element={<Navigate to="/informes" replace />} />
+          <Route path='/informes' element={<Home />} />
+          <Route path='/iniciar-sesion' element={<Login />} />
+          <Route path='/crear-cuenta' element={<Register />} />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   )
 }

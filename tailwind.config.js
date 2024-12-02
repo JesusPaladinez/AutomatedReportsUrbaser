@@ -7,6 +7,10 @@ export default {
         "urbaser-1": "#053630",
         "urbaser-2": "#53d1c9",
       },
+      backgroundImage: {
+        "img-login": "url('/src/assets/imgLogin.jpg')",
+        "img-register": "url('/src/assets/imgRegister.jpg')",
+      },
     },
   },
   plugins: [],

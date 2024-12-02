@@ -11,8 +11,8 @@ export default function Navbar() {
       </Link>
       <div className="flex gap-10 text-white font-medium">
         <Link to="/informes" className='hover:text-urbaser-2 transition-all'>Inicio</Link>
-        <Link to="/login" className='hover:text-urbaser-2 transition-all'>Iniciar sesión</Link>
-        <Link to="/register" className='hover:text-urbaser-2 transition-all'>Crear cuenta</Link>
+        <Link to="/iniciar-sesion" className='hover:text-urbaser-2 transition-all'>Iniciar sesión</Link>
+        <Link to="/crear-cuenta" className='hover:text-urbaser-2 transition-all'>Crear cuenta</Link>
       </div>
     </div>
   )
