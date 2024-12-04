@@ -1,19 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import logoUrbaser from '../assets/logoUrbaser.svg';
+import logoUrbaserDark from '../assets/logoUrbaserDark.svg';
+import { LuLogOut } from 'react-icons/lu';
 
 
 export default function Navbar() {
   return (
-    <div className="flex items-center justify-between p-10 bg-urbaser-1">
+    <nav className="flex items-center justify-between p-10 bg-urbaser-1">
       <Link to={"/"}>
-        <img src={logoUrbaser} alt="Logo Urbaser" className="h-10" /> 
+        <img src={logoUrbaserDark} alt="Logo Urbaser" className="h-10" /> 
       </Link>
-      <div className="flex gap-10 text-white font-medium">
-        <Link to="/informes" className='hover:text-urbaser-2 transition-all'>Inicio</Link>
-        <Link to="/iniciar-sesion" className='hover:text-urbaser-2 transition-all'>Iniciar sesión</Link>
-        <Link to="/crear-cuenta" className='hover:text-urbaser-2 transition-all'>Crear cuenta</Link>
-      </div>
-    </div>
+      <p className='text-white text-lg'>Jesús Paladinez</p>
+      <Link to={'/iniciar-sesion'}>
+        <LuLogOut className='text-white hover:text-urbaser-2 text-xl text'/>
+      </Link>
+    </nav>
   )
 }

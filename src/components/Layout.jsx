@@ -10,7 +10,7 @@ export default function Layout({ children }) {
     const shouldShowLayout = !noLayoutRoutes.includes(location.pathname);
 
   return (
-    <div className='flex flex-col max-h-screen'>
+    <div className='flex flex-col h-screen'>
       {shouldShowLayout && <Navbar />}
       <main className='flex-1 flex'>{children}</main>
       {shouldShowLayout && <Footer />}
